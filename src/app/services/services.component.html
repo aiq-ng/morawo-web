@@ -1,0 +1,78 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-end">
+  <div class="block md:flex h-4/5 mt-auto items-center justify-between">
+    <div class="w-full md:w-1/2 my-32 md:my-0">
+      <h3 class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-semibold">
+        Services We Offer
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Morawo Full-stack Data Scientists Help You Expand Business With a
+        Data-driven Way"
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img src="/assets/images/img-one.png" style="margin: 0 auto;" width="80%" alt="" />
+    </div>
+  </div>
+  <div class="mt-8">
+    <p class="font-normal text-sm">
+      Data is the life of an enterprise that wants to be digital. It is a
+      strategic asset that helps the business to learn about evolving
+      opportunities, hidden threats, changing customer expectations, and the
+      competitive landscape. Data Science has the ability to find patterns in
+      the data. It tells you how your customers behave and what will be their
+      interest area. It tells you where and when to supply the latest lot of
+      this season's product. It tells you which components in your network are
+      liable to fail. It tells you who is likely to defraud you. Ultimately it
+      unlocks the next level of performance for your organization.
+
+      <br />
+
+      <span style="font-weight: 500;">Morawo Analytics</span> helps businesses to turn raw numbers into
+      strategic business insights. We offer Data Science as a service and
+      perform difficult analytics for tech businesses and service providers. We
+      help enterprises to unlock the power of data. We make custom data analysis
+      tools that parse big data and turn it into meaningful information for your
+      business. We achieve this by either increasing a part of the project or by
+      tackling an entire project from start to finish. Our experienced team of
+      data analysts has years of experience in deploying the operationalizing
+      and supporting analytics in live business environments.
+    </p>
+  </div>
+</div>
+
+<app-our-service></app-our-service>
+<app-our-industries> </app-our-industries>
+<app-our-technologies></app-our-technologies>
+
+<!-- Service Blog -->
+<div
+class="ml-auto mt-16 w-full flex flex-col lg:flex-row lg:w-4/5 justify-between"
+>
+<div class="flex flex-col mx-4 md:mx-0 md:flex-row w-full lg:w-3/4 items-start gap-3">
+  <img
+    src="/assets/icons/smile.svg"
+    class="mt-6"
+    alt=""
+    width="50"
+    height="50"
+  />
+  <h2
+    class="font-medium text-2xl md:text-5xl leading-[50px] lg:leading-[70px]"
+  >
+    Stay informed with our latest news and updates.
+  </h2>
+</div>
+<div
+  class="mt-auto mx-4 md:mx-0 ml-0 md:ml-12 lg:ml-1 flex items-center gap-2 h-10 w-52 cursor-pointer"
+>
+  <p class="border rounded-3xl p-1 text-sm font-medium border-black">
+    READ THE JOURNAL
+  </p>
+  <span class="image"> </span>
+</div>
+</div>
+<app-our-articles [blogs]="blogPost"></app-our-articles>

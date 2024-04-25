@@ -1,0 +1,79 @@
+<div class="bg-black py-6 md:py-16">
+  <div class="container mx-auto text-white block md:flex gap-12 items-center">
+    <div>
+      <p class="font-medium text-sm">Tools & Technology</p>
+      <h4 class="text-xl md:text-3xl font-semibold whitespace-nowrap">
+        Our Technology Resources
+      </h4>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+    </div>
+
+    <div class="flex gap-4 overflow-x-auto w-full bg-white mt-8 p-3">
+      <div *ngFor="let data of techData" class="flex-shrink-0">
+        <img [src]="data.image" alt="" width="80px" height="40px" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tw-carousel">
+  <!-- Carousel content goes here -->
+  <div
+    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+    <!--First item-->
+    <div
+      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-active
+      data-twe-carousel-item
+      style="backface-visibility: hidden">
+      <img
+        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
+        class="block w-full"
+        alt="..." />
+      <div
+        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+        <h5 class="text-xl">First slide label</h5>
+        <p>
+          Some representative placeholder content for the first slide.
+        </p>
+      </div>
+    </div>
+    <!--Second item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-item
+      style="backface-visibility: hidden">
+      <img
+        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
+        class="block w-full"
+        alt="..." />
+      <div
+        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+        <h5 class="text-xl">Second slide label</h5>
+        <p>
+          Some representative placeholder content for the second slide.
+        </p>
+      </div>
+    </div>
+    <!--Third item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-item
+      style="backface-visibility: hidden">
+      <img
+        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
+        class="block w-full"
+        alt="..." />
+      <div
+        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+        <h5 class="text-xl">Third slide label</h5>
+        <p>
+          Some representative placeholder content for the third slide.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: white;
+  font-family: "Montserrat" sans-serif;
+}
+
+
+/* For WebKit based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 3px; /* Adjust width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cccfd1eb; /* Thumb color */
+}
+
+/* For Firefox */
+/* Note: Custom styling of scrollbars is not supported in Firefox, 
+       but you can style the overlay scrollbars */
+html {
+  scrollbar-width: 1px;
+  scrollbar-color: #cccfd1eb #fff;
+}

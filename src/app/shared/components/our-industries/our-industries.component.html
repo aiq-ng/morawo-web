@@ -1,0 +1,22 @@
+<div class="bg-black py-10 md:py-20">
+  <div class="container mx-auto text-white">
+    <p class="font-medium text-sm">Industries</p>
+    <h4 class="text-xl md:text-3xl font-semibold">Industries We are Transforming</h4>
+    <p class="font-medium text-sm my-2">
+      The transformation of industries by Big Data Analytics, Artificial
+      Intelligence, and Data Science
+    </p>
+    <div
+      class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+    ></div>
+
+    <div class="flex gap-4 overflow-x-auto w-full mt-8">
+      <div *ngFor="let data of industriesData" class="w-64 md:w-72 h-64 md:h-72 flex-shrink-0">
+        <div class="flex flex-col justify-end rounded-lg p-3" style="background: url({{data.image}}); background-repeat: no-repeat; background-position: center; height: 100%; width: 100%; background-size: cover; ">
+          <p class="font-semibold text-xl md:text-2xl mb-3">{{ data.mainText }}</p>
+          <p class="font-medium text-sm">{{ data.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

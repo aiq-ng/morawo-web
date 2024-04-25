@@ -1,0 +1,81 @@
+<div class="bg-white h-[80vh] md:h-screen w-full flex items-end">
+  <div
+    class="container mx-auto text-black h-3/4 block md:flex items-stretch justify-between"
+  >
+    <div class="w-full md:w-1/2">
+      <h3 class="text-3xl md:text-5xl leading-[50px] md:leading-[60px] mb-3 font-semibold">
+        We Transform Businesses & Society Through Our Data Science Service
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-medium text-sm my-2">
+        Our data model equipped with advanced technologies of Big Data, Data
+        analytics Data Science, and Artificial Intelligence offers precise
+        analytical data that help organizations to empower their business, make
+        better decisions, boost ROI, and accomplish goals. Our company converts
+        structured and unstructured data into precise distinguishable metrics
+        that enable you to analyze the best for your business.
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <div class="relative">
+        <div class="absolute top-0 z-10 right-0 w-4/5">
+          <img src="/assets/images/img-two.png" width="90%" alt="" />
+        </div>
+        <div class="absolute top-20 z-20 w-4/5">
+          <img src="/assets/images/img-one.png" width="90%" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-light-grey py-12">
+  <div class="container mx-auto py-12  block md:flex  justify-center items-center">
+    <div class="hidden md:block w-2/5">
+      <img src="/assets/images/img-one.png" width="80%" alt="" />
+    </div>
+    <div class="w-full md:w-1/2">
+      <div
+        *ngFor="let val of values"
+        class="p-4 bg-white my-4 rounded-2xl border-l-8 border-black"
+      >
+        <h4 class="text-xl md:text-2xl my-2 font-semibold">{{ val.mainText }}</h4>
+        <p class="text-sm my-2 font-normal">{{ val.text }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white py-6 md:py-12">
+  <div class="container mx-auto py-6 md:py-12  block md:flex justify-between items-center">
+    <div class="w-full md:w-1/2">
+      <p class="font-medium text-sm my-2">Why Choose</p>
+      <h3 class="text-xl md:text-3xl mb-3 font-semibold">
+        Morawo Analytics Data?
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-medium text-sm my-2">
+        We let the businesses obtain insight data they require to analyze and
+        help them to make data-driven strategies and accomplish their business
+        goals with scalable and reliable analysis. Whatever your business is- we
+        will provide you trustworthy data which will help your company to make
+        informed decisions and be ahead in this competitive market. To become
+        the best data-driven organisation with faster unique insights by
+        applying Data Science and Artificial Intelligence. Our team always
+        engaged with unique innovation, implementing seamless result, and turn
+        your business into data-driven organisations.
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img src="/assets/images/img-two.png" width="80%" alt="" />
+    </div>
+  </div>
+</div>
+
+<app-our-approach></app-our-approach>

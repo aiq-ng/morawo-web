@@ -1,0 +1,18 @@
+<div class="bg-white py-4 md:py-8 md-4 md:my-8">
+<div class="container mx-auto shadow-xl py-6  rounded-4xl ">
+
+    <h4 class="text-xl md:text-3xl font-semibold my-8">Our Approach and Methodology</h4>
+
+    <div class="flex flex-wrap items-center justify-center my-8 gap-6 py-4">
+        <div *ngFor="let data of approachIcon let last = last;" class="flex justify-center items-center gap-4">
+            <div class="flex flex-col justify-center items-center">
+                <img [src]="data.icon" width="80px" height="80px" alt="" />
+                <p class="my-4 font-normal text-sm">{{data.text}}</p>
+            </div>
+            <div *ngIf="!last" class="hidden md:block">
+                <img src="/assets/icons/arrow-right 2.svg" alt="" width="50px" height="50px" />
+            </div>
+        </div>
+    </div>
+</div>
+</div>

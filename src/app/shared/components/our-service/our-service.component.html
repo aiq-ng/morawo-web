@@ -1,0 +1,21 @@
+<div class="bg-white py-10 md:py-20">
+  <div class="container mx-auto">
+    <p class="font-medium text-sm ">Services</p>
+    <h4 class="text-xl md:text-3xl font-semibold my-2">Our Services</h4>
+    <div
+      class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+    ></div>
+    <div class="flex flex-wrap gap-5 justify-around mt-6">
+      <div
+        *ngFor="let data of serviceData"
+        class="w-60 h-56 md:h-60 rounded-xl p-2 md:p-6 shadow-xl m-2 bg-light-white flex flex-col items-center"
+      >
+        <img src="/assets/icons/atom-icon.svg" width="60" height="60" alt="" />
+        <p class="my-2 text-sm font-medium leading-5">{{ data?.mainText }}</p>
+        <p class="my-2 text-sm font-normal leading-4 text-center">
+          {{ data?.text }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

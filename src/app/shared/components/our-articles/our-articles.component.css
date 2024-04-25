@@ -1,0 +1,68 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  min-height: 800px;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/icons/article-pattern.svg");
+  background-size: cover;
+}
+
+.image {
+  cursor: pointer;
+  background: url("/assets/icons/Arrow.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  transition: background-image 0.5s ease;
+}
+
+.image:hover {
+  background-image: url("/assets/icons/Arrow-green.svg");
+  transform: rotate(180deg); /* Rotate the image upside down */
+  animation: slideInRight 1ms ease, slowMotion 0s linear;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slowMotion {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.blogImage {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.blogImage:hover {
+  transform: scale(1.2); /* Zoom in effect */
+  transform-origin: center; /* Center the zoom effect */
+}
+
+@media only screen and (max-width: 1023px) {
+  .articles {
+    min-height: 500px;
+    overflow-y: auto;
+  }
+}

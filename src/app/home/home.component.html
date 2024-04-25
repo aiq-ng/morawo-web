@@ -1,0 +1,119 @@
+<div
+  class="bg-homeImage min-h-screen bg-no-repeat bg-center bg-cover w-full flex items-center mx-auto"
+>
+  <div class="container mx-auto mt-6 lg:mt-16">
+    <div class="w-full lg:w-3/5">
+      <p class="text-white text-xs md:text-base font-medium">
+        Reimagine Real-World with Technology
+      </p>
+      <h2 class="font-bold text-3xl md:text-6xl text-white leading-[55px] md:leading-[74px]">
+        Artificial Intelligence Company
+      </h2>
+      <div class="w-32 h-2 rounded-md my-4 bg-[#D9D9D9]"></div>
+      <p class="text-white text-sm md:text-lg font-normal my-8">
+        Transform your business with our excellent innovative technologies and
+        insights.
+      </p>
+
+      <div class="flex items-center gap-5">
+        <p class="text-white font-medium text-sm md:text-lg">Get A Quote</p>
+
+        <img
+          src="/assets/icons/arrow-right.svg"
+          width="41"
+          height="41"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-light-grey py-6 md:py-10 relative">
+  <div class="cointainer py-4 md:py-8 mx-auto">
+    <h4 class="font-semibold text-xl md:text-3xl text-center">
+      The Reason we stand out – Insights fuel action
+    </h4>
+    <div class="flex justify-around font-normal my-6 overflow-x-auto">
+      <button
+        *ngFor="let content of contents"
+        [ngClass]="{ 'active-state': pageData === content.text }"
+        (click)="changeView(content.text)"
+        class="py-2 px-4 whitespace-nowrap rounded-3xl m-1 lg:m-2 text-[#333333] font-normal text-sm"
+      >
+        {{ 
+          content.text }}
+      </button>
+    </div>
+  </div>
+
+  <app-home-contents [value]="pageData"></app-home-contents>
+  <div class="absolute hidden md:block bottom-0 right-0 w-80">
+    <img src="/assets/images/design-1.svg" width="100%" height="400px" alt="" />
+  </div>
+</div>
+
+
+
+<app-our-approach></app-our-approach>
+<app-our-service></app-our-service>
+<app-our-industries></app-our-industries>
+
+<div class="my-5 md:my-10">
+  <div class="font-medium container w-full md:w-3/4 text-center mx-auto py-6 md:py-10">
+    <p class="text-sm">OUR PRODUCT</p>
+    <h4 class="text-3xl md:text-5xl leading-[40px] md:leading-[50px] my-4">Eilera Agronomic System</h4>
+    <p class="font-normal text-sm w-full md:w-3/5 mx-auto">
+      Eilera is your all-in-one agronomic system, designed to empower farmers
+      with data-driven insights and personalized recommendations for optimized
+      yields.
+    </p>
+    <div class="flex gap-9 items-center justify-center my-6">
+      <button class="bg-black rounded-3xl flex items-center text-white text-sm p-3">
+        Download
+        <img width="24px" height="24px" src="/assets/icons/download.svg" alt="" />
+      </button>
+      <button class=" p-3 flex items-center text-[#646464] text-xs gap-2 rounded-2xl">Learn More <img src="/assets/icons/right-arrow01.svg" width="16px" height="16px" alt="" /></button>
+    </div>
+  </div>
+  <div class="bg-[#2ECC710D]">
+    <div class="container mx-auto flex justify-between">
+      <div class="w-full md:w-1/2 py-7 md:py-14">
+        <h4 class="text-xl md:text-3xl font-semibold">Our Sevices</h4>
+        <p class="my-2 font-normal text-sm md:text-base">
+          An agronomic crop monitoring system stands as a sophisticated solution
+          harnessing an array of cutting-edge technologies, including satellite
+          imagery, drones, sensors, and data analytics, to meticulously oversee
+          and optimize crop cultivation across its lifecycle. By furnishing
+          farmers with timely, precise insights into critical parameters such as
+          soil moisture, nutrient composition, pest infestations, disease
+          outbreaks, crop vigor, and growth trajectory, this system empowers
+          agricultural stakeholders to make informed decisions with unparalleled
+          precision and foresight.
+        </p>
+        <p class="my-2 font-normal text-sm md:text-base">
+          In the realm of modern agriculture, agronomic crop monitoring systems
+          emerge as indispensable assets, facilitating the seamless adoption of
+          data-driven methodologies. Through the integration of advanced
+          technologies and tailored analytics, these systems catalyze enhanced
+          productivity, sustainability, and adaptability, equipping farmers to
+          navigate the complexities of evolving environmental conditions and
+          dynamic market landscapes with unwavering confidence and efficacy.
+        </p>
+        <div class="flex gap-9 items-center  my-6">
+          <button class="bg-black rounded-3xl flex items-center text-white text-sm p-3">
+            Download
+            <img width="24px" height="24px" src="/assets/icons/download.svg" alt="" />
+          </button>
+          <button class=" p-3 flex items-center text-[#646464] text-xs gap-2 rounded-2xl">Learn More <img src="/assets/icons/right-arrow01.svg" width="16px" height="16px" alt="" /></button>
+        </div>
+      </div>
+      <div class="hidden md:flex w-2/5 justify-end">
+        <img src="/assets/images/home/img-01.svg" width="100%" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<app-our-technologies></app-our-technologies>
+
+<app-faq></app-faq>

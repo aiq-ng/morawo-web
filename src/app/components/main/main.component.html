@@ -1,0 +1,55 @@
+<div class="container mx-auto min-h-[70vh]  md:min-h-screen flex flex-col justify-center">
+  <div class="block md:flex h-4/5 items-center justify-between">
+    <div class="w-full md:w-1/2">
+      <h3 class="text-3xl md:text-5xl leading-[50px] md:leading-[60px] mb-3 font-semibold">
+        The Industries We Evolve
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Take a look how we transform industries with Big Data Analytics,
+        Artificial Intelligence, and Data Science. So you can meet new
+        challenges easily and mitigate future risks, our digital transformation
+        team will seamlessly transform your business.
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img
+        src="/assets/images/industries-bg.svg"
+        style="margin: 0 auto"
+        width="100%"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto">
+  <div
+    **ngFor="let data of idustriesData"
+    class="bg-light-white rounded-4xl py-14 px-12 flex items-center justify-between"
+  >
+    <div class="w-full px-4 md:px-0 md:w-1/2">
+      <h4 class="text-4xl font-bold text-grey-one my-2 leading-9">
+        {{ data.mainText }}
+      </h4>
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 mb-2 h-2 rounded-2xl"
+      ></div>
+      <p class="text-sm font-normal text-grey-two my-3">
+        {{ data.text }}
+      </p>
+      <button class="bg-black text-white p-3 rounded-[22px]">Learn More</button>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img src="/assets/images/img-04.png" width="100%" height="auto" alt="" />
+    </div>
+  </div>
+</div>
+
+<app-our-service></app-our-service>
+<app-our-industries> </app-our-industries>
+<app-our-technologies></app-our-technologies>
+<app-our-articles></app-our-articles>

@@ -7,9 +7,9 @@ module.exports = {
         DEFAULT: "1rem",
         sm: "1rem",
         md: "1rem",
-        lg: "2rem",
-        xl: "5rem",
-        "2xl": "6rem",
+        lg: "3rem",
+        xl: "4rem",
+        "2xl": "5rem",
       },
     },
     screens: {
@@ -32,11 +32,14 @@ module.exports = {
       "main-light-green": "#2ECC71",
       "light-green": "#2ECC710D",
       white: "#FFFFFF",
-      black: "#000",
-      "body-grey": "#696969F2",
+      "light-white": "#FAF9F9",
+      black: "#000000",
+      "light-grey": "#F8F9FA",
+      "grey-700": "#737373",
+      "grey-200": "#DBDBDB",
     },
     fontFamily: {
-      display: ['"Inter"'],
+      display: ["Montserrat"],
     },
     extend: {
       spacing: {
@@ -47,8 +50,9 @@ module.exports = {
         "4xl": "2rem",
       },
       backgroundImage: {
-        homeImage: "url('/assets/images/morawoBg.png')",
-        "morawo-logo": "url('/assets/images/morawoIcon.png')",
+        homeImage: "url('/assets/images/home-bg.png')",
+        imgOne: "url('/assets/images/img-01.png')",
+        "morawo-logo": "url('/assets/icons/logo-icon.png')",
       },
     },
   },
