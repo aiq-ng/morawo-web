@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,7 @@ import { ServicesComponent } from './services/services.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { IndustriesComponent } from './industries/industries.component';
+import { IndustriesInfoComponent } from './industries-info/industries-info.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { IndustriesComponent } from './industries/industries.component';
     BlogComponent,
     BlogDetailsComponent,
     IndustriesComponent,
+    IndustriesInfoComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SlickCarouselModule,
     SharedModule,
     CommonModule,
     

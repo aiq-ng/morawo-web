@@ -6,7 +6,38 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-details.component.css']
 })
 export class BlogDetailsComponent {
+  blogData: string = 'All';
 
+  contents: any = [
+    {
+      text: 'All',
+    },
+    {
+      text: 'Data Science',
+    },
+    {
+      text: 'Big Data',
+    },
+    {
+      text: 'Big Data Analytics',
+    },
+    {
+      text: 'Artificial Intelligence ',
+    },
+    {
+      text: 'Predictive Analysis',
+    },
+    {
+      text: 'Machine Learning',
+    },
+    {
+      text: 'Devops',
+    },
+    {
+      text: 'Video Analytics',
+    },
+   
+  ];
   blogPost: any = [
     {
       image: '/assets/images/blogOne.webp',
@@ -21,4 +52,7 @@ export class BlogDetailsComponent {
       text: 'Maximizing Crop Yields in Africa: A Guide to Local Success',
     },
   ];
+  changeView(view: string) {
+    this.blogData = view;
+  }
 }

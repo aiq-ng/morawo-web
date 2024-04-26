@@ -11,11 +11,34 @@ import { OurApproachComponent } from './components/our-approach/our-approach.com
 import { HomeContentsComponent } from './components/home-contents/home-contents.component';
 import { OurArticlesComponent } from './components/our-articles/our-articles.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { CustomCarouselComponent } from './components/custom-carousel/custom-carousel.component';
 
 @NgModule({
-  declarations: [HeaderComponent, OurServiceComponent, OurIndustriesComponent, FooterComponent, OurTechnologiesComponent, OurApproachComponent, HomeContentsComponent, OurArticlesComponent, FaqComponent],
+  declarations: [
+    HeaderComponent,
+    OurServiceComponent,
+    OurIndustriesComponent,
+    FooterComponent,
+    OurTechnologiesComponent,
+    OurApproachComponent,
+    HomeContentsComponent,
+    OurArticlesComponent,
+    FaqComponent,
+    CustomCarouselComponent,
+  ],
   imports: [RouterModule, CommonModule],
   providers: [],
-  exports: [HeaderComponent, OurServiceComponent, OurIndustriesComponent, FooterComponent, OurTechnologiesComponent, OurApproachComponent, HomeContentsComponent, OurArticlesComponent, FaqComponent],
+  exports: [
+    HeaderComponent,
+    OurServiceComponent,
+    OurIndustriesComponent,
+    FooterComponent,
+    OurTechnologiesComponent,
+    OurApproachComponent,
+    HomeContentsComponent,
+    OurArticlesComponent,
+    FaqComponent,
+    CustomCarouselComponent,
+  ],
 })
 export class SharedModule {}

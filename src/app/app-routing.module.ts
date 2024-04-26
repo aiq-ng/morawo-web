@@ -7,6 +7,7 @@ import { ServicesComponent } from './services/services.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { IndustriesComponent } from './industries/industries.component';
+import { IndustriesInfoComponent } from './industries-info/industries-info.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'industries',
    component: IndustriesComponent
+  },
+  {
+    path: 'industries/:infoId',
+   component: IndustriesInfoComponent
   },
 ];
 

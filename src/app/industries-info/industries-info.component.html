@@ -1,0 +1,93 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="block md:flex h-4/5 items-center justify-between">
+    <div class="w-full md:w-1/2 my-32 md:my-0">
+      <h3
+        class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-semibold"
+      >
+        Data Science Services
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Improve Your Business Performance With Data Science Service
+      </p>
+    </div>
+    <div class="hidden md:block w-5/12">
+      <img
+        src="/assets/images/industries-data.png"
+        style="margin: 0 auto"
+        width="90%"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="mt-10">
+    <p class="text-sm md:text-base">
+      Data science and machine learning are the base for business growth, cost
+      and risk decrease, and even new business model creation. Data science aims
+      to extract insight from data in different forms, both structured and
+      unstructured. It’s a multi-disciplinary field, including everything from
+      applied mathematics to statistics and artificial intelligence to machine
+      learning.  <br />
+      <br />
+      Today so many enterprises are using data science to unlock the value of
+      Big Data with actionable insights to allow data-driven choices for
+      products and services that decrease customer churn, improve customer
+      satisfaction, optimize operations, re-define business strategies and grow
+      profits.
+    </p>
+  </div>
+</div>
+
+<div class="container mx-auto my-4 md:my-10">
+  <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+    Why Businesses Need Data Science Service?
+  </h4>
+  <p class="font-normal text-sm">
+    There are various ready-to-use data science solutions in the market, but we
+    believe that our clients are best served by a customized solution since one
+    size does not fit all. We aim to develop a solution that matches your
+    business demands the number of data you gather and based on your current IT
+    infrastructure setup. Morawo provides Data Science services and solutions
+    that best for the client’s ETL Process needs and Machine Learning Model
+    demands to gain insights from data that increases continuously across
+    different industries.  
+    <br />
+    Morawo delivers unique, path-breaking data science solutions and services to
+    a global clientele. We offer the best data science consulting service that
+    has real data preparation and modeling. We migrate algorithms, models over
+    advanced analytics platforms.
+  </p>
+</div>
+
+<div class="container mx-auto my-4 md:my-10">
+  <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+    Our Data Science Services
+  </h4>
+  <p class="font-normal text-sm">
+    There are various ready-to-use data science solutions in the market, but we
+    believe that our clients are best served by a customized solution since one
+    size does not fit all. We aim to develop a solution that matches your
+    business demands the number of data you gather and based on your current IT
+    infrastructure setup. Morawo provides Data Science services and solutions
+    that best for the client’s ETL Process needs and Machine Learning Model
+    demands to gain insights from data that increases continuously across
+    different industries.  
+    <br />
+    Morawo delivers unique, path-breaking data science solutions and services to
+    a global clientele. We offer the best data science consulting service that
+    has real data preparation and modeling. We migrate algorithms, models over
+    advanced analytics platforms.
+  </p>
+
+  <div *ngFor="let item of mockData" class="py-3">
+    <div class="flex gap-2 items-center my-2">
+      <img src="/assets/icons/black-box.svg" width="12" height="10" alt="" />
+      <p class="font-medium text-base">{{ item.mainText }}</p>
+    </div>
+    <p class="font-normal text-sm">{{item.text}}</p>
+  </div>
+</div>
+<app-our-technologies></app-our-technologies>

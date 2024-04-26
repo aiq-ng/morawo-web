@@ -1,12 +1,13 @@
 /* custom-carousel.component.css */
 .carousel {
     position: relative;
+    width: 100%;
     overflow: hidden;
   }
   
   .carousel-inner {
     display: flex;
-    transition: transform 0.8s ease;
+    transition: transform 0.4s ease;
   }
   
   .carousel-item {
@@ -23,9 +24,6 @@
   
   .carousel-control-prev {
     left: 10px;
-    background-color: black;
-    width: 2px;
-    height: 2px;
   }
   
   .carousel-control-next {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-industries',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./industries.component.css']
 })
 export class IndustriesComponent {
+  constructor(private router: Router)  {}
   idustriesData: any = [
     {
       mainText: "Manufacturing",
@@ -136,4 +138,8 @@ export class IndustriesComponent {
       text: 'Maximizing Crop Yields in Africa: A Guide to Local Success',
     },
   ];
+
+    infoHandler(id: number) {
+    this.router.navigate(['/industries', id]);
+  }
 }

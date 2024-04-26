@@ -31,5 +31,11 @@ export class OurIndustriesComponent {
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
       molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum`,
     },
+    {
+      image: "/assets/images/home/startup.png",
+      mainText: "Startup MVP",
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+      molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum`
+    }
   ];
 }

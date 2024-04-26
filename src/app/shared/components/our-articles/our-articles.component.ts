@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-our-articles',
@@ -7,6 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class OurArticlesComponent {
   @Input() blogs: any = []
+  constructor(private router: Router) {}
   blogPosts: any = [
     {
       image: '/assets/images/blogOne.webp',
@@ -21,4 +23,8 @@ export class OurArticlesComponent {
       text: 'Maximizing Crop Yields in Africa: A Guide to Local Success',
     },
   ];
+  blogHandler(id: number) {
+    this.router.navigate(['/blog', id]);
+  }
+  
 }

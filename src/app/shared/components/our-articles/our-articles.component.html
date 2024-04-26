@@ -14,7 +14,7 @@
 
     <div class="articles w-full flex flex-row flex-wrap justify-between mt-10">
       <div
-        *ngFor="let post of blogs; let i = index"
+        *ngFor="let post of blogs; let i = index"  (click)="blogHandler(i)"
         class="w-4/5 mx-auto lg:w-1/3 md:w-5/12 flex rounded-xl my-4 overflow-hidden shadow-lg lg:shadow-none"
       >
         <div class="mx-auto lg:mx-2">

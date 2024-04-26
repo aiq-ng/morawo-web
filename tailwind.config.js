@@ -50,7 +50,9 @@ module.exports = {
         "4xl": "2rem",
       },
       backgroundImage: {
-        homeImage: "url('/assets/images/home-bg.png')",
+        homeImage01: "url('/assets/images/home/home-bg01.png')",
+        homeImage02: "url('/assets/images/home/home-bg02.png')",
+        homeImage03: "url('/assets/images/home/home-bg03.png')",
         imgOne: "url('/assets/images/img-01.png')",
         "morawo-logo": "url('/assets/icons/logo-icon.png')",
       },
