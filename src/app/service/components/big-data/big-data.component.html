@@ -1,0 +1,110 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center mb-8">
+  <div class="block md:flex h-4/5 items-center justify-between">
+    <div class="w-full md:w-1/2 my-32 md:my-0">
+      <h3 class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-normal">
+        Big Data <span class="font-semibold">Implementation</span>
+      </h3>
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Move Archive Data to Various Platforms at Any time.
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img
+        src="/assets/images/service/11.webp"
+        style="margin: 0 auto"
+        width="90%"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="mt-8">
+    <p class="font-normal text-sm my-1">
+      Big data makes a great gift for entrepreneurs by providing business
+      insights beyond the traditional data of a business system. Dealing with
+      big data not only opens up great opportunities for companies, it
+      unfortunately also creates some obstacles for many that are not always
+      easy to overcome. 
+    </p>
+    <p class="font-normal text-sm my-1">
+      With the help of big data and data warehouse analytics, every company can
+      benefit from expanding its own analyses beyond the use of traditional
+      business data. Before the advent of huge amounts of data, deeper,
+      context-dependent analyses were not even possible.
+    </p>
+    <div class="my-4">
+      <h4 class="font-semibold text-xl md:text-3xl">
+        Big Data + Business Intelligence: A combination that is crucial for
+        success
+      </h4>
+      <p class="font-normal text-sm my-2">
+        Big data alone is of little use to companies. Most of them have even
+        accumulated an incredibly large amount of data for a long time and are
+        at least unconsciously living the basic idea of ??the big data trend.
+        Only the combination of big data in business intelligence platforms
+        enables specialists to carry out the most extensive analyzes and develop
+        360-degree perspectives on the company. Because only the optimal
+        application of business intelligence turns big data into smart insights.
+        your use.
+      </p>
+    </div>
+    <div class="my-4">
+      <h4 class="font-semibold text-xl md:text-3xl">
+        Practical Ttips For An Optimal Use Of Big Data
+      </h4>
+      <p class="font-normal text-sm my-2">
+        Implement the cloud in order to build the big data platform and master
+        the enormous flow of data.<br />
+        You also need experts with extensive know-how in business intelligence
+        and statistics.<br />
+        Ideally, a technology competence center is set up that can provide
+        support for all aspects of big data infrastructure. <br />
+        User training should be considered so that the new data and its
+        integration into analytical platforms can be understood and optimally
+        implemented. <br />
+      </p>
+    </div>
+  </div>
+
+  <div class="my-10 py-6">
+    <h4 class="font-semibold text-xl md:text-3xl">
+        Some of Out Big Data Tools 
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of tools" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-8 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+        Why Businesses need Big Data
+    </h4>
+    <div>
+      <div *ngFor="let item of expertise">
+        <div class="flex items-center gap-4 my-3">
+          <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+          <p class="font-medium text-base">{{ item.main }}</p>
+        </div>
+        <p class="font-normal ml-10 text-sm">{{ item.text }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-xl md:text-3xl">
+        Why You Should Contact Morawo For Your Big Data Implementation
+    </h4>
+    <p class="my-2 text-sm font-normal">Morawo is one of the leading business intelligence and data analytics companies in the world. Our customers are present in different fields and our big data solutions can be applied to various industries such as:</p>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of service" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+ 
+</div>

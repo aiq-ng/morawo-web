@@ -1,0 +1,117 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="block md:flex h-4/5 items-center justify-between">
+    <div class="w-full md:w-1/2 my-32 md:my-0">
+      <h3 class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-normal">
+        Data Visualisation <span class="font-semibold">Services</span>
+      </h3>
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        View and Examine Complex Data in a Simple Way With Our Data
+        Visualisation Service
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img
+        src="/assets/images/service/04.webp"
+        style="margin: 0 auto"
+        width="90%"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="mt-8">
+    <p class="font-normal text-sm">
+      Now the challenges are being able to handle the large volumes of data from
+      many sources and to be able to find insights in an easy to access manner.
+      Data visualizations perform the best role in addressing this challenge and
+      help with interacting science outputs to a wide variety of audiences. A
+      well-designed data visualizations can make a big impact in being able to
+      uncover discoveries that would otherwise continue unnoticed.
+      <br />
+      Data visualization can effectively expand audience understanding,
+      resulting in successful campaigning and ROI. You can have all the
+      information in the world, but it means nothing if you can’t make sense of
+      it.
+    </p>
+  </div>
+
+  <div class="my-10 py-6">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Know The Benefits of Data Visualizations
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of benefit" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+    <div class="my-6">
+      <p class="font-normal text-base my-2">
+        Morawo uses a methodology consisting of a range of various ways to
+        analyze multi-faceted data, finding the important trends and patterns
+        that can often be overlooked. With the use of different methods like
+        infographics, surveys, trend analysis, benchmarking and much more, the
+        stakeholder can drill down into the quantitative and qualitative
+        results. This allows you to achieve a full appreciation, confidence, and
+        understanding of the insights you receive from a data-driven approach.
+      </p>
+      <br />
+      <p class="font-normal text-base my-2">
+        We leverage data visualization solutions to connect the gap between IT
+        and your business. We provide business intelligence solutions using
+        interactive dashboards provided with complex analytics including
+        real-time geo-mapping, timeline analysis, and predictive analytics.
+      </p>
+    </div>
+  </div>
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Our Data Visualization Solutions:
+    </h4>
+    <div class="flex flex-wrap my-6 gap-4">
+      <div
+        *ngFor="let item of solution"
+        class="flex items-center w-full sm:w-1/5 gap-3 mr-8"
+      >
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-normal w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Tools We Use to Develop Data Visualization
+    </h4>
+    <div class="flex flex-wrap my-6 gap-4">
+      <div *ngFor="let item of tools" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Why Morawo is the Best Company For Data Visualisation Service
+    </h4>
+    <p class="font-normal text-base my-2">
+      Morawo, data visualization uses processes that allow individuals and
+      organizations to interrogate and know the data in a new and transparent
+      way, which develops the internal capacity for innovative and targeted
+      responses. Our data visualization services facilitate easy digestion of
+      data allowing users to make sense of large data sets with graphical
+      charts, tables, informative graphs, maps, etc.
+    </p>
+    <div class="flex flex-wrap my-6 gap-4">
+      <div
+        *ngFor="let item of reason"
+        class="flex items-center gap-5 mr-8"
+      >
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,12 +1,9 @@
 <div class="container mx-auto min-h-screen flex flex-col justify-center">
   <div class="block md:flex h-4/5 items-center justify-between">
     <div class="w-full md:w-1/2 my-32 md:my-0">
-      <h3
-        class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-semibold"
-      >
-        Data Science Services
+      <h3 class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-normal">
+        Data Science <span class="font-semibold">Services</span>
       </h3>
-
       <div
         class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
       ></div>
@@ -31,7 +28,7 @@
       unstructured. It’s a multi-disciplinary field, including everything from
       applied mathematics to statistics and artificial intelligence to machine
       learning.
-<br />
+      <br />
       <br />
 
       Today so many enterprises are using data science to unlock the value of
@@ -40,5 +37,49 @@
       satisfaction, optimize operations, re-define business strategies and grow
       profits.
     </p>
+  </div>
+
+  <div class="my-10 py-6">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Why Businesses Need Data Science Service?
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of benefit" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-normal md:whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+    <div class="my-6">
+      <p class="font-normal text-base">
+        There are various ready-to-use data science solutions in the market, but
+        we believe that our clients are best served by a customized solution
+        since one size does not fit all. We aim to develop a solution that
+        matches your business demands the number of data you gather and based on
+        your current IT infrastructure setup. Morawo provides Data Science
+        services and solutions that best for the client’s ETL Process needs and
+        Machine Learning Model demands to gain insights from data that increases
+        continuously across different industries.
+      </p>
+      <br />
+      <p>
+        <span class="font-medium text-base">Morawo </span> delivers unique,
+        path-breaking data science solutions and services to a global clientele.
+        We offer the best data science consulting service that has real data
+        preparation and modeling. We migrate algorithms, models over advanced
+        analytics platforms.
+      </p>
+    </div>
+  </div>
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">Our Data Science Services</h4>
+    <div>
+      <div *ngFor="let item of services">
+        <div class="flex items-center gap-4 my-3">
+          <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+          <p class="font-semibold text-base">{{ item.main }}</p>
+        </div>
+        <p class="font-normal ml-10 text-sm">{{ item.text }}</p>
+      </div>
+    </div>
   </div>
 </div>

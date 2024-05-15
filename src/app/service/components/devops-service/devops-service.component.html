@@ -1,0 +1,108 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center mb-8">
+  <div class="block md:flex h-4/5 items-center justify-between">
+    <div class="w-full md:w-1/2 my-32 md:my-0">
+      <h3 class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-normal">
+        DevOps <span class="font-semibold">Services</span>
+      </h3>
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Use Morawo's DevOps ato Accelerate Your Organization's DevOps Systems.
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img
+        src="/assets/images/service/08.webp"
+        style="margin: 0 auto"
+        width="90%"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="mt-8">
+    <p class="font-normal text-sm my-2">
+      The digital flow has driven enterprises to bring development and services
+      out of their siloes and into association with the rest of the
+      organization. Now, DevOps, is one of the solutions to make IT a relevant
+      business partner. The benefits of DevOps can span the complete delivery
+      pipeline. It can help you increase deployment frequency, leading to faster
+      time to market, a lower failure rate of new releases, reduced the lead
+      time between ?xes and faster time to recovery.
+    </p>
+    <p class="font-normal text-sm my-2">
+      By adding a DevOps strategy, your business can make easy processes
+      programmable and dynamic, helping to maximize operational predictability,
+      performance, security, and maintainability. DevOps brings together
+      processes, people & technology, automating software product delivery to
+      offer constant value to your users.
+    </p>
+    <p class="font-normal text-sm my-2">
+      At Morawo, our DevOps services ensure the on-boarding of applications by
+      facilitating constant integration and development and automating
+      end-to-end delivery pipeline over several leading platforms. With our
+      DevOps consulting, we help various enterprises to deliver higher
+      efficiency, a better quality of software builds, and faster time. Our
+      service allows agile development teams to focus on their core strengths by
+      giving a 'as a service' environment, customized for your organization's
+      demands. We offer proven tools, flows, environments and expertise for
+      large and small enterprises to instantly spin up a DevOps environment for
+      your use.
+    </p>
+    <p class="font-normal text-sm my-2">
+      Our service facilitates the provider journey to an organization. DevOps
+      develops and collaboratively deploys software. Our DevOps consulting helps
+      organizations align with the goals, providing high-quality software-based
+      services.
+    </p>
+  </div>
+
+  <div class="my-10 py-6">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Benefits of DevOps Services
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of benefits" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-8 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Know the DevOps Services Morawo Offerss
+    </h4>
+    <div>
+      <div *ngFor="let item of expertise">
+        <div class="flex items-center gap-4 my-3">
+          <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+          <p class="font-medium text-base">{{ item.main }}</p>
+        </div>
+        <p class="font-normal ml-10 text-sm">{{ item.text }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-xl md:text-3xl">
+        Hire Morawo As Your ‘DevOps Service Provider’
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of service" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-xl md:text-3xl">
+        Tools We Use to Deliver DevOps Solutions
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of tools" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+</div>

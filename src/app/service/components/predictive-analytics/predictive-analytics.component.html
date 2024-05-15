@@ -1,0 +1,98 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center mb-8">
+  <div class="block md:flex h-4/5 items-center justify-between">
+    <div class="w-full md:w-1/2 my-32 md:my-0">
+      <h3 class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-normal">
+        Predictive Analytics <span class="font-semibold">Services</span>
+      </h3>
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Move Archive Data to Various Platforms at Any time
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img
+        src="/assets/images/service/07.webp"
+        style="margin: 0 auto"
+        width="90%"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="mt-8">
+    <p class="font-normal text-sm">
+      Predictive analysis is the method of using current and historical data to
+      obtain predictions about unknowns like future trends and events. Its
+      models capture relationships among many factors to assess risk with a
+      particular set of conditions to assign a score, or weightage.
+      <br />
+      <br />
+      Predictive analytics empowers organizations to become proactive, forward
+      looking, predicting outcomes and behaviors based upon the data. Predictive
+      Analytics solutions are a secure method of forecasting as it also focuses
+      on risk management and takes what-if scenarios into account. Moreover, it
+      helps organizations adapt to the needs of the industry and innovate on the
+      go.
+    </p>
+  </div>
+
+  <div class="my-10 py-6">
+    <h4 class="font-semibold text-xl md:text-3xl">
+        How Predictive Analytics Beneficial
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of benefit" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+    <div class="my-6">
+      <p class="font-normal text-base my-2">
+        Morawo is a predictive analytics company that builds solutions to help you predict customer behavior and outcomes and drive your business in the proper direction. We make powerful data models designed to inform more efficient business strategies and decisions. Using proprietary predictive analytic models, our specialists help to quantify business difficulties in the context of your data. Our proven method makes the more accurate insight, so you can move forward with confidence.
+      </p>
+      <br />
+      <p class="font-normal text-base my-2">
+        Morawo has a team of expert business analysts and data scientists to help you develop predictive models to make smarter business decisions. They are well versed in data modeling, data collection, statistical algorithms, and deployment.
+      </p>
+    </div>
+  </div>
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+        Predictive Analytics Use cases
+    </h4>
+    <div class="flex flex-wrap my-6 gap-4">
+      <div
+        *ngFor="let item of services"
+        class="flex items-center w-full sm:w-1/5 gap-3 mr-8"
+      >
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-normal w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+        How We Build Predictive Analytics Models
+    </h4>
+    <div class="flex flex-wrap my-6 gap-4">
+      <div *ngFor="let item of models" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="my-8 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">Why You Should Choose Morawo for Predictive Analytics Services</h4>
+    <div>
+      <div *ngFor="let item of predictive_analytics">
+        <div class="flex items-center gap-4 my-3">
+          <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+          <p class="font-medium text-base">{{ item.main }}</p>
+        </div>
+        <p class="font-normal ml-10 text-sm">{{ item.text }}</p>
+      </div>
+    </div>
+  </div>
+</div>

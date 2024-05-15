@@ -1,0 +1,129 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="block md:flex h-4/5 items-center justify-between">
+    <div class="w-full md:w-1/2 my-32 md:my-0">
+      <h3
+        class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-normal"
+      >
+        Data Analytics <span class="font-semibold">Services</span>
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Leverage Our Data Analytics Service To Increase Your Business Growth
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img
+        src="/assets/images/service/03.webp"
+        style="margin: 0 auto"
+        width="90%"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="mt-8">
+    <p class="font-normal text-sm">
+      Data analytics is the process to analyze data sets in order to attract
+      conclusions about the information they receive frequently with the help of
+      specific systems and software. Data analytics technologies & techniques
+      are widely utilized in marketing industries to make more-informed business
+      decisions.
+      <br />
+      In today's data-driven business world, companies and organizations rely
+      massively on data analysis to make fast and well-informed decisions.
+      Analysis of data also helps businesses to minimize risks and maximize
+      profits.
+    </p>
+  </div>
+
+  <div class="my-10 py-6">
+    <h4 class="font-semibold text-xl md:text-3xl">Data Warehouses Used For!</h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div
+        *ngFor="let item of benefit"
+        class="flex items-center w-full sm:w-3/12 gap-3 mr-8"
+      >
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-normal w-11/12">{{ item }}</p>
+      </div>
+    </div>
+    <div class="my-6">
+      <p class="font-normal text-base my-2">
+        Morawo Data Analytics helps you to overcome all challenges by providing
+        quality data analytics services at an affordable price. Our professional
+        Data Analysts can synchronize our analytical solutions with the
+        strategic, tactical, and operational aims of your organization.
+        Depending on your business demands, we can offer you Prescriptive
+        Analytics making use of data and models to optimize your future business
+        decisions, predictive analytics to forecast probable future outcomes,
+        and descriptive analytics to make you future-ready by analyzing your
+        past events.
+      </p>
+      <br />
+      <p class="font-normal text-base my-2">
+        Our team has a wide view of the different options available and that
+        helps you to assess both commercial product vendors and open source
+        options. Our expertise in the data analytics domain has provided to
+        businesses’ demand for actionable insights from their online and offline
+        data sources. We are a vendor-neutral player, we audit, consult and
+        implement an optimized data strategy to gain a competing edge.
+      </p>
+    </div>
+  </div>
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Our Data Analytics Service Include:
+    </h4>
+    <div class="flex justify-between flex-wrap gap-6 my-4">
+      <div *ngFor="let item of analytics" class="w-[30%]">
+        <div class="flex items-center gap-4 my-3">
+          <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+          <p class="font-semibold text-base">{{ item.main }}</p>
+        </div>
+        <div class="ml-4">
+          <div
+            *ngFor="let content of item.content"
+            class="flex items-center gap-2"
+          >
+            <div class="w-2 h-[1px] rounded-sm mr-4 bg-black"></div>
+            <p>{{ content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Our Analytics Solution For Various Businesses
+    </h4>
+    <div class="flex flex-wrap my-6 gap-4">
+      <div
+        *ngFor="let item of solution"
+        class="flex items-center w-full sm:w-1/5 gap-3 mr-8"
+      >
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-normal w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-4">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Why Morawo is the Best place for Data Analytics
+    </h4>
+    <p class="font-normal text-sm my-2">
+      We ensure consistency and quality of data being used for analytics<br />
+      We reduce data retrieval problems <br />
+      Make decisions more efficiently with a highly visual representation of
+      data<br />
+      We use social media analytics like media and behavioral analytics<br />
+      We allow personalization to connect with viewers <br />
+      Track quality of content and viewership and get targeted advertising
+      <br />
+      Our Team Help Uncovers New revenue streams
+    </p>
+  </div>
+</div>

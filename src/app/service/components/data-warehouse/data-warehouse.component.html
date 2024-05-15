@@ -1,0 +1,92 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="block md:flex h-4/5 items-center justify-between">
+    <div class="w-full md:w-1/2 my-32 md:my-0">
+      <h3 class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-normal">
+        Data Science <span class="font-semibold">Warehouse</span>
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Empower your business to save time and money with a data warehouse from
+        Morawo Data Analytics.
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img
+        src="/assets/images/service/02.webp"
+        style="margin: 0 auto"
+        width="90%"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="mt-8">
+    <p class="font-normal text-sm">
+      Traditional data warehouses are failing to meet the increased scale and
+      analytics demands that growing businesses are experiencing. The current
+      data warehouse system is powerful, scalable, and affordable—enabling
+      organizations to share petabytes of data across thousands of users with
+      the security, governance, and availability that large enterprises demand.
+      A data warehousing is defined as a technique to collect and manage data
+      from varied sources to provide meaningful business insights. It is a
+      mixture of technologies and components that helps the strategic use of
+      data.
+      <br />
+      The exponential growth of information from diverse sources in various
+      formats and quality presents a problem in the management of information
+      and its utilization, and data warehousing itself.
+    </p>
+  </div>
+
+  <div class="my-10 py-6">
+    <h4 class="font-semibold text-xl md:text-3xl">Data Warehouses Used For!</h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div
+        *ngFor="let item of benefit"
+        class="flex items-center w-full sm:w-3/12 gap-3 mr-8"
+      >
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-normal md:whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+    <div class="my-6">
+      <p class="font-normal text-base my-2">
+        Data warehousing services at Morawo Data Analytics allow clients to
+        harness data and effectively derive valuable business insights. With our
+        deep domain expertise and rich experience in data warehousing, we
+        provide meaningful solutions that allow global businesses to improve
+        decision-making and business performance.
+      </p>
+      <br />
+      <p class="font-normal text-base my-2">
+        At Morawo Data Analytics, our knowledge and experience in data
+        warehousing help us provide a complete suite of data warehousing
+        solutions, from data acquisition to data transformation, to help you
+        stay updated in the fast-changing world of big data.
+      </p>
+      <p class="font-normal text-base my-2">
+        Our data warehouse consultants are very skilled and experts in data
+        warehouse architecture. To make a decision, the client spends huge
+        amounts of time manually gathering the data. Our team, with their deep
+        data warehouse knowledge, enriches your work environment. We aim to
+        reduce or eliminate expensive and error-prone processes.
+      </p>
+    </div>
+  </div>
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Our Data Warehouse Service:
+    </h4>
+    <div>
+      <div *ngFor="let item of services">
+        <div class="flex items-center gap-4 my-3">
+          <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+          <p class="font-semibold text-base">{{ item.main }}</p>
+        </div>
+        <p class="font-normal ml-10 text-sm">{{ item.text }}</p>
+      </div>
+    </div>
+  </div>
+</div>

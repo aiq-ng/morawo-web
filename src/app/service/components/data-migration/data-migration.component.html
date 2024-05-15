@@ -1,0 +1,128 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center mb-8">
+  <div class="block md:flex h-4/5 items-center justify-between">
+    <div class="w-full md:w-1/2 my-32 md:my-0">
+      <h3 class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-normal">
+        Data Migration <span class="font-semibold">Services</span>
+      </h3>
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Move Archive Data to Various Platforms at Any time
+      </p>
+    </div>
+    <div class="hidden md:block w-2/5">
+      <img
+        src="/assets/images/service/06.webp"
+        style="margin: 0 auto"
+        width="90%"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="mt-8">
+    <p class="font-normal text-sm">
+      Data Migration is the changes in data between storage types, formats, or
+      software systems. It should be a key consideration for any system
+      implementation, rise or consolidation. In an ideal world, it would be
+      performed programmatically to make an automated migration. The fact is
+      that migration experts are the most important part of the process when it
+      is business or time-critical.
+    </p>
+  </div>
+
+  <div class="my-10 py-6">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Know The Types of Data Migrations
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of types" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Benefits of Data Migrations
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of benefits" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+    <div>
+      <p class="font-normal text-sm">
+        Whether your company is migrating its data to the cloud, doing a tech
+        refresh, or making corrections to your data center storage strategy, we
+        have the extensive knowledge and experience necessary to get the work
+        done securely and efficiently. We can take care of the whole migration
+        process, from plan to development to documents and content. Our team has
+        proven that these are an important part of the success of the project.
+        These features usually require collaboration among various groups while
+        always maintaining branding and message consistency across sites, which
+        can influence the workload needed.
+        <br />
+        <br />
+        When we work with you on the data migration project, we include business
+        and technical stakeholders in setting the objectives and take the time
+        upfront to define data management processes and configure and test
+        migrations.
+      </p>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Know- How Do We Go On Data Migration
+    </h4>
+    <p class="text-base font-normal my-2">
+      Strat data migration processes using templates and guides
+    </p>
+    <p class="text-base font-normal my-2">
+      Identify legacy sources and drive specification of demands for data
+      migration
+    </p>
+    <p class="text-base font-normal my-2">
+      Create profiles of data sets and drive analytics
+    </p>
+    <p class="text-base font-normal my-2">
+      Identify and implement data defect detection rules
+    </p>
+    <p class="text-base font-normal my-2">Drive data validation processes</p>
+  </div>
+  <div class="my-8 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Why You Should Choose Morawo for Predictive Analytics Services
+    </h4>
+    <div>
+      <div *ngFor="let item of expertise">
+        <div class="flex items-center gap-4 my-3">
+          <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+          <p class="font-medium text-base">{{ item.main }}</p>
+        </div>
+        <p class="font-normal ml-10 text-sm">{{ item.text }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Know The Data Migration Cases
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of cases" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Tools We Use For Data Migrations
+    </h4>
+    <div class="flex flex-wrap my-8 gap-8">
+      <div *ngFor="let item of tools" class="flex items-center gap-3 mr-8">
+        <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+        <p class="whitespace-nowrap w-11/12">{{ item }}</p>
+      </div>
+    </div>
+  </div>
+</div>
