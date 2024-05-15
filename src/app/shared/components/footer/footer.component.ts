@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent {
   constructor(private router: Router) {}
-  [x: string]: any;
   navigateToHome() {
     this.router.navigate(['']);
   }
