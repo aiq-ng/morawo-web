@@ -1,0 +1,119 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="h-4/5 items-center justify-between">
+    <div class="w-full md:my-0">
+      <h3
+        class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-semibold"
+      >
+        Retail
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Increase sales in your retail store with data analytics
+      </p>
+    </div>
+    <div class="mt-10 md:block w-full md:w-4/5 mx-a">
+      <img src="/assets/images/industry/retail.webp" width="90%" alt="" />
+    </div>
+  </div>
+  <div class="mt-10">
+    <p class="text-base md:text-lg">
+      Attract customers, increase the average order value and drives sales in
+      your retail store with the help of a top data analytics service.<br />
+      <br />
+
+      Online and offline retail have long identified the essence and impact of
+      data science for their business. We support you in the development and
+      operational implementation of your data science use cases and projects.<br />
+      <br />
+      The retail industry is facing a digital revolution. What was apparently a
+      topic of online retail until a few years ago is now making its way into
+      brick-and-mortar retail. Data science, big data and machine learning are
+      revolutionizing the way business-relevant decisions are made in
+      retail. <br />
+      <br />
+      Most retail companies are often in the comfortable position of already
+      having massive amounts of data at their disposal: Sales, pricing and
+      disposition data form the basis for many exciting use cases in the field
+      of data science and machine learning.<br /><br />
+      Our team of data scientists supports you as a retail company with the
+      challenges of digital trade. Together with you, we develop comprehensible
+      systems for you to forecast, optimize and control demand, quantities and
+      prices. Take advantage of our experience in the retail industry and
+      arrange a consultation to clarify your options and needs.<br /><br />
+    </p>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Application of data science in retail
+    </h4>
+
+    <div class="font-normal my-2">
+      <p class="text-base my-2">
+        • Dynamic Pricing: Adjust prices to the characteristics and demand
+        behavior of individual customers or groups.
+      </p>
+      <p class="text-base my-2">
+        • Sales Forecasting: We develop models to predict the amount sold for
+        your products and product groups.
+      </p>
+      <p class="text-base my-2">
+        • Disposition optimization: Modeling of order behavior at store level to
+        avoid out-of-stock situations. 
+      </p>
+      <p class="text-base my-2">
+        • Customized prices: Determination of customer-specific price
+        elasticities and demand functions using choice sets.
+      </p>
+      <p class="text-base my-2">
+        • Up- und Cross-Selling: Analysis of historical shopping carts to
+        generate product recommendations and purchase advice.
+      </p>
+      <p class="text-base my-2">
+        • Price elasticities: Statistical modeling of price-sales functions on
+        store for optimal pricing.
+      </p>
+    </div>
+  </div>
+
+  <div class="my-5">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Data analysis in Retail
+    </h4>
+    <p class="font-normal text-sm my-1">
+      Many retailers already recognize the impact that big data has on customer
+      service, supply chain optimization, and business strategies. Big data in
+      retail offers stores the opportunity to learn and capitalize on market
+      trends to increase profitability. <br /><br />
+      Retail data analytics involves collecting big data to improve pricing
+      strategies, supply chain control, and the customer experience. Big data
+      refers to market collections and internal company information that reveal
+      global industry and customer trends. Scientists traditionally define big
+      data by evaluating its volume, speed, and variety. In other words, the
+      data collection must be large, fast to process, and diverse. These
+      characteristics make it more valuable to the company. <br /><br />
+      Big data in the retail industry helps companies improve their customer
+      service. Retailers can use valuable customer data to improve product
+      development, the shopping journey, and the overall buyer experience.
+      Retail data analytics continues to transform the way stores optimize
+      operations and approach
+    </p>
+  </div>
+
+  <div class="my-5">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+        Why retail businesses should consider data analytics
+    </h4>
+    <div *ngFor="let item of reasons" class="py-3">
+        <div class="flex gap-2 items-center my-2">
+          <img src="/assets/icons/black-box.svg" width="12" height="10" alt="" />
+          <p class="font-medium text-base">{{ item.mainText }}</p>
+        </div>
+        <p class="font-normal ml-6 text-sm">{{ item.text }}</p>
+      </div>
+  </div>
+
+</div>

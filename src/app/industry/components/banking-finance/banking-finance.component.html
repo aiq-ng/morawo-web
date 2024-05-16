@@ -1,0 +1,83 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="h-4/5 items-center justify-between">
+    <div class="w-full md:my-0">
+      <h3
+        class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-semibold"
+      >
+        Data Science in Banking and Financial Services
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Businesses like banking sectors are required to predict their customer
+        lifetime value.
+      </p>
+    </div>
+    <div class="mt-10 md:block w-full md:w-4/5 mx-a">
+      <img src="/assets/images/industry/finance.webp" width="90%" alt="" />
+    </div>
+  </div>
+  <div class="mt-10">
+    <p class="text-base md:text-lg">
+      Banking and Finance are growing sectors and embracing Artificial
+      Intelligence and Machine Learning technology, and it transforms every
+      factor of business. The industry has spread across the world and has left
+      an impact on every business. We apply technology that remodels finance and
+      banking sectors entirely. Fintech's development and investment in the
+      recent decade have pushed the banking industry to the top of the list
+      regarding new technology investment. Because of the constant growth in
+      competition, conventional banks can no longer rely on outdated procedures
+      and technologies.  <br /><br />
+      Artificial intelligence (AI) is being used by banks as an analytical tool
+      and a technique to better service clients and manage internal activities.
+      Many difficulties that the banking industry faces, such as fraud, customer
+      experience, security, operations, and financial forecasts, may be solved
+      by AI. 
+    </p>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Area Of Expertise:
+    </h4>
+    <div *ngFor="let item of area" class="py-3">
+      <div class="flex gap-2 items-center my-2">
+        <img src="/assets/icons/black-box.svg" width="12" height="10" alt="" />
+        <p class="font-medium text-base">{{ item.mainText }}</p>
+      </div>
+      <p class="font-normal ml-6 text-sm">{{ item.text }}</p>
+    </div>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Benefits Include:
+    </h4>
+    <div *ngFor="let item of benefits" class="py-3">
+      <div class="flex gap-2 items-center my-2">
+        <img src="/assets/icons/black-box.svg" width="12" height="10" alt="" />
+        <p class="font-medium text-base">{{ item.mainText }}</p>
+      </div>
+      <p class="font-normal ml-6 text-sm">{{ item.text }}</p>
+    </div>
+  </div>
+
+  <div class="my-5">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      The Role of Artificial Intelligence in Banking and Financial:
+    </h4>
+    <p class="font-normal text-sm my-1">
+      In the past few years, advanced technology has boosted the banking and
+      financial sector. On the front end, banks use AI to make client
+      identification and verification easier, simulate human personnel through
+      chatbots and voice assistants, strengthen customer relationships, and
+      deliver tailored insights and recommendations. Almost every financial
+      institution has invested in Artificial Intelligence and Machine Learning
+      for modern solutions. The customers are responding and liking experience
+      and service by adopting Artificial Intelligence. Fintech solutions are
+      encouraging and leading the Banking & Finance Sector into a better place.
+    </p>
+  </div>
+</div>

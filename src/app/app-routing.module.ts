@@ -20,7 +20,8 @@ const routes: Routes = [
   },
   {
     path: 'service',
-    loadChildren: () => import("./service/service.module").then((m) => m.ServiceModule),
+    loadChildren: () =>
+      import('./service/service.module').then((m) => m.ServiceModule),
   },
   {
     path: 'services',
@@ -36,11 +37,12 @@ const routes: Routes = [
   },
   {
     path: 'industries',
-   component: IndustriesComponent
+    component: IndustriesComponent,
   },
   {
-    path: 'industries/:infoId',
-   component: IndustriesInfoComponent
+    path: 'industry',
+    loadChildren: () =>
+      import('./industry/industry.module').then((m) => m.IndustryModule),
   },
 ];
 

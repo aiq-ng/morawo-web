@@ -41,10 +41,10 @@
         <p class="text-sm font-normal text-grey-two my-3">
           {{ data.text }}
         </p>
-        <button class="bg-black p-3 flex items-center text-white text-xs gap-3 rounded-2xl">Learn More <img src="/assets/icons/right-arrow.svg" width="16px" height="16px" alt="" /></button>
+        <button class="bg-black p-3 flex items-center text-white text-xs gap-3 rounded-2xl" [routerLink]="data.path"> Learn More <img src="/assets/icons/right-arrow.svg" width="16px" height="16px" alt="" /></button>
       </div>
       <div class="hidden md:block w-2/5">
-        <img src="/assets/images/img-04.png" width="100%" height="auto" alt="" />
+        <img [src]="data.image" width="100%" height="auto" alt="" />
       </div>
     </div>
   </div>

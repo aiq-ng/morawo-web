@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-industries',
-  templateUrl: './industries.component.html',
+  templateUrl: './industries.component.html', 
   styleUrls: ['./industries.component.css']
 })
 export class IndustriesComponent {
@@ -12,56 +12,56 @@ export class IndustriesComponent {
     {
       mainText: "Manufacturing",
       text: "Transform your business by boosting productivity, refine adaptability with data",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/manufacture.webp",
+      path: "/industry/manufacturing"
     },
     {
       mainText: "Banking And Financials",
       text: "Power your Data Analytics and prevent fraudulent activity and ensure data security while integrated with third-party",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/finance.webp",
+      path: "/industry/banking-finance"
     },
     {
       mainText: "Insurance",
       text: "Align insurance with faster decision-making, enhance legacy system, empower customer relations, and integrated third-party services",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/insurance.webp",
+      path: "/industry/insurance"
     },
     {
       mainText: "Healthcare",
       text: "Enhance medical facilities, seamless practice process, track and get the insight of the data, reduce expense, and reform quality of care.",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/healthcare.webp",
+      path: "/industry/healthcare"
     },
     {
       mainText: "Retail",
       text: "With research data, create a market growth strategy, optimize product sales and inventory, and predict the future demand.",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/retail.webp",
+      path: "/industry/retail"
     },
     {
       mainText: "Media And Entertainment",
       text: "Deliver high-quality content with seamless integrated services and accomplish analytics success",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/media.webp",
+      path: "/industry/media"
     },
     {
       mainText: "Education",
       text: "Give a new platform and approach to learning, personalized learning experience with remarkable technology",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/education.webp",
+      path: "/industry/education"
     },
     {
       mainText: "Automotive",
       text: "We provide a research database which helps in Mapping metadata, ensuring high quality of data analytics and reports.",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/automative.webp",
+      path: "/industry/automotive"
     },
     {
       mainText: "Travel and Hospitality",
       text: "Boost your sales service, enhance customer segmentation with analysis and predict future price strategies",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/travel.webp",
+      path: "/industry/travel"
     },
     {
       mainText: "Oil And Gas",
@@ -70,20 +70,8 @@ export class IndustriesComponent {
       path: ""
     },
     {
-      mainText: "Energy",
-      text: "Discover new energy, cost-effective and prevent power outage, increase the production and sales with data",
-      image: "/assets/images/industry/",
-      path: ""
-    },
-    {
       mainText: "Real Estate And E-commerce",
       text: "Power your Data Analytics and prevent fraudulent activity and ensure data security while integrated with third-party",
-      image: "/assets/images/industry/",
-      path: ""
-    },
-    {
-      mainText: "Telecom",
-      text: "Provide new innovative workflows, enhance data-driven network services, help to obtain new customers, and expand market reach strategically.",
       image: "/assets/images/industry/",
       path: ""
     },

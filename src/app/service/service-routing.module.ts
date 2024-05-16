@@ -46,7 +46,7 @@ const routes: Routes = [
       {
         path: 'predictive-analytics',
         component: PredictiveAnalyticsComponent,
-      },
+      }, 
       {
         path: 'data-migration',
         component: DataMigrationComponent,

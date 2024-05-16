@@ -1,0 +1,92 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="h-4/5 items-center justify-between">
+    <div class="w-full md:my-0">
+      <h3
+        class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-semibold"
+      >
+        Insurance
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Data science is efficiently transforming the insurance industry
+      </p>
+    </div>
+    <div class="mt-10 md:block w-full md:w-4/5 mx-a">
+      <img src="/assets/images/industry/insurance.webp" width="90%" alt="" />
+    </div>
+  </div>
+  <div class="mt-10">
+    <p class="text-base md:text-lg">
+      With data science and machine learning, insurance companies have the
+      opportunity to use the full potential of their internal and external data
+      to optimize products, services and processes.<br />
+      <br />
+
+      In addition to banks and other financial institutions, insurance companies
+      are also facing the central challenge of the future: “digitization”.
+      Although the business model of insurers has been data-based for decades,
+      the industry has been slow to open up to digital change.<br />
+      <br />
+
+      With regard to the systematic use of internal and external data, many
+      insurance companies have the advantage of already having many data sources
+      and data warehouses that have been built up over many years. The potential
+      stored here is just waiting to be exploited through appropriate
+      analyzes.<br />
+      <br />
+
+      In the insurance sector, too, data science and machine learning will
+      become a strategic asset that can generate competitive advantages over the
+      competition. Our team of data science experts supports you in the
+      identification and implementation of data science and machine learning
+      projects and implements them in your infrastructure.<br />
+      <br />
+    </p>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Compulsory insurance for businesses
+    </h4>
+    <p class="font-normal my-2 text-sm">
+      In principle, analytics methods and instruments can be used in almost
+      every business area. With the help of internal and external data,
+      companies can take a comprehensive look at customer behaviours, market
+      segments and growth potential, avoid wrong decisions and develop new
+      models. The analysis functions range from the basics such as data
+      management and business intelligence to more complex functions such as
+      performance management, predictive modelling, asset intelligence,
+      automation and more. <br /><br />
+      As a company we must be aware that we must take out a series of insurances
+      and there are others types that are dependent of our decisions. The
+      company is the economic engine of our life and, therefore, it must be well
+      insured so that, if the case arises, all the economic consequences derived
+      from the accident do not fall directly on the entrepreneurs.
+    </p>
+    <div *ngFor="let item of benefits" class="py-3">
+      <div class="flex gap-2 items-center my-2">
+        <img src="/assets/icons/black-box.svg" width="12" height="10" alt="" />
+        <p class="font-medium text-base">{{ item.mainText }}</p>
+      </div>
+      <p class="font-normal ml-6 text-sm">{{ item.text }}</p>
+    </div>
+  </div>
+
+  <div class="my-5">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+        Benefits of Morawo Data Analytics
+    </h4>
+    <p class="font-normal text-sm my-1">
+        • Customer Lifetime Value: Model the customer value over the contract period depending on various factors. <br />
+        • Customer retention: Predict which customers will end their contracts early and who can be brought back. <br />
+        • Fraud detection: Use machine learning to automatically identify which of your customers may have fraudulent intentions. <br />
+        • Risk analysis: Use statistical  <br />
+        • Models and simulations to calculate the risk of your business and your customers. <br />
+        • Forecasting: Use models from statistics and machine learning to predict premium income and benefits. <br />
+        • Next best product: Analyze which of your customers are interested in other products and offers from your portfolio.
+    </p>
+  </div>
+</div>
