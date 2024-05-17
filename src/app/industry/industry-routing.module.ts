@@ -10,6 +10,7 @@ import { MediaComponent } from './components/media/media.component';
 import { EducationComponent } from './components/education/education.component';
 import { TravelComponent } from './components/travel/travel.component';
 import { AutomotiveComponent } from './components/automotive/automotive.component';
+import { OilGasComponent } from './components/oil-gas/oil-gas.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
         {
           path: 'automotive',
           component: AutomotiveComponent
+        },
+        {
+          path: 'oil-gas',
+          component: OilGasComponent
         }
     ]
   },
