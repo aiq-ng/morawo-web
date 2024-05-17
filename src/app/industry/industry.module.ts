@@ -14,6 +14,10 @@ import { EducationComponent } from './components/education/education.component';
 import { TravelComponent } from './components/travel/travel.component';
 import { AutomotiveComponent } from './components/automotive/automotive.component';
 import { OilGasComponent } from './components/oil-gas/oil-gas.component';
+import { RealEstateComponent } from './components/real-estate/real-estate.component';
+import { TelecomComponent } from './components/telecom/telecom.component';
+import { FoodBeveragesComponent } from './components/food-beverages/food-beverages.component';
+import { EnergyComponent } from './components/energy/energy.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { OilGasComponent } from './components/oil-gas/oil-gas.component';
     EducationComponent,
     TravelComponent,
     AutomotiveComponent,
-    OilGasComponent
+    OilGasComponent,
+    RealEstateComponent,
+    TelecomComponent,
+    FoodBeveragesComponent,
+    EnergyComponent
   ],
   imports: [CommonModule, SharedModule, IndustryRoutingModule,  RouterModule],
 })

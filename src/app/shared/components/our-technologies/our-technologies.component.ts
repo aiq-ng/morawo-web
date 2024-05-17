@@ -1,13 +1,12 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-our-technologies',
   templateUrl: './our-technologies.component.html',
   styleUrls: ['./our-technologies.component.css'],
 })
-export class OurTechnologiesComponent implements OnInit {
-  constructor(private elementRef: ElementRef) {}
-  currentSlideIndex = 0;
+export class OurTechnologiesComponent implements AfterViewInit, OnDestroy  {
+  @ViewChild('carouselInner') carouselInner!: ElementRef;
 
   techData: any = [
     {
@@ -111,18 +110,37 @@ export class OurTechnologiesComponent implements OnInit {
       image: '/assets/icons/tech/eight.svg',
     },
   ];
-  ngOnInit() {
-    setInterval(() => {
+
+  currentSlideIndex = 0;
+  intervalId: any;
+
+  constructor(private renderer: Renderer2) {}
+
+  ngAfterViewInit(): void {
+    this.startAutoSlide();
+  }
+
+  ngOnDestroy(): void {
+    this.clearAutoSlide();
+  }
+
+  startAutoSlide() {
+    this.intervalId = setInterval(() => {
       this.nextSlide();
-    }, 2000); // Change slide every 3 seconds
+    }, 5000); // Change slides every 5 seconds
+  }
+
+  clearAutoSlide() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
   }
 
   nextSlide() {
-    const carousel = document.querySelector('.carousel-inner') as HTMLElement; // Assert type to HTMLElement
-    if (!carousel) return; // Check if carousel is null
+ 
+    if (!this.carouselInner) return;
 
-    const carouselWidth = carousel.clientWidth;
-    const totalSlides = carousel.children.length;
+    const totalSlides = this.carouselInner.nativeElement.children.length;
 
     if (this.currentSlideIndex < totalSlides - 1) {
       this.currentSlideIndex++;
@@ -130,17 +148,13 @@ export class OurTechnologiesComponent implements OnInit {
       this.currentSlideIndex = 0;
     }
 
-    carousel.style.transform = `translateX(-${
-      this.currentSlideIndex * carouselWidth
-    }px)`;
+    this.updateSlide();
   }
 
   prevSlide() {
-    const carousel = document.querySelector('.carousel-inner') as HTMLElement; // Assert type to HTMLElement
-    if (!carousel) return; // Check if carousel is null
+    if (!this.carouselInner) return;
 
-    const carouselWidth = carousel.clientWidth;
-    const totalSlides = carousel.children.length;
+    const totalSlides = this.carouselInner.nativeElement.children.length;
 
     if (this.currentSlideIndex > 0) {
       this.currentSlideIndex--;
@@ -148,8 +162,20 @@ export class OurTechnologiesComponent implements OnInit {
       this.currentSlideIndex = totalSlides - 1;
     }
 
-    carousel.style.transform = `translateX(-${
-      this.currentSlideIndex * carouselWidth
-    }px)`;
+    this.updateSlide();
+  }
+
+  private updateSlide() {
+    const carouselWidth = this.carouselInner.nativeElement.clientWidth;
+    this.renderer.setStyle(
+      this.carouselInner.nativeElement,
+      'transform',
+      `translateX(-${this.currentSlideIndex * carouselWidth}px)`
+    );
+    this.renderer.setStyle(
+      this.carouselInner.nativeElement,
+      'transition',
+      'transform 0.5s ease'
+    );
   }
 }

@@ -20,7 +20,7 @@ export class IndustriesComponent {
       text: "Power your Data Analytics and prevent fraudulent activity and ensure data security while integrated with third-party",
       image: "/assets/images/industry/finance.webp",
       path: "/industry/banking-finance"
-    },
+    }, 
     {
       mainText: "Insurance",
       text: "Align insurance with faster decision-making, enhance legacy system, empower customer relations, and integrated third-party services",
@@ -66,38 +66,32 @@ export class IndustriesComponent {
     {
       mainText: "Oil And Gas",
       text: "Improve your automate workflows and monitoring process, high analytical and report facilities while ensuring data safety",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/oil.webp",
+      path: "/industry/oil-gas"
     },
     {
       mainText: "Real Estate And E-commerce",
       text: "Power your Data Analytics and prevent fraudulent activity and ensure data security while integrated with third-party",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/real-estate.webp",
+      path: "/industry/real-estate"
     },
     {
       mainText: "Telecom",
       text: "Provide new innovative workflows, enhance data-driven network services, help to obtain new customers, and expand market reach strategically.",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/telecom.webp",
+      path: "/industry/telecom"
     },
     {
       mainText: "Food And Beverages",
       text: "Keep the track on quality, enhance services, bring out more innovation, and boost the product sales.",
-      image: "/assets/images/industry/",
-      path: ""
-    },
-    {
-      mainText: "Transportation And Logistics",
-      text: "Get the real-time insight and data, track the precision location, and operate while monitoring with efficiency",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/food.webp",
+      path: "/industry/food-beverages"
     },
     {
       mainText: "Energy",
       text: "Discover new energy, cost-effective and prevent power outage, increase the production and sales with data",
-      image: "/assets/images/industry/",
-      path: ""
+      image: "/assets/images/industry/energy.webp",
+      path: "/industry/energy"
     },
    ]
    blogPosts: any = [

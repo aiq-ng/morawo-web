@@ -12,6 +12,7 @@ import { HomeContentsComponent } from './components/home-contents/home-contents.
 import { OurArticlesComponent } from './components/our-articles/our-articles.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { CustomCarouselComponent } from './components/custom-carousel/custom-carousel.component';
+import { HomeCarouselComponent } from './components/home-carousel/home-carousel.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CustomCarouselComponent } from './components/custom-carousel/custom-car
     OurArticlesComponent,
     FaqComponent,
     CustomCarouselComponent,
+    HomeCarouselComponent,
   ],
   imports: [RouterModule, CommonModule],
   providers: [],
@@ -38,7 +40,7 @@ import { CustomCarouselComponent } from './components/custom-carousel/custom-car
     HomeContentsComponent,
     OurArticlesComponent,
     FaqComponent,
-    CustomCarouselComponent,
+    CustomCarouselComponent, HomeCarouselComponent
   ],
 })
 export class SharedModule {}

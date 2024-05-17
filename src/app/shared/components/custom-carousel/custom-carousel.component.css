@@ -5,13 +5,22 @@
     overflow: hidden;
   }
   
-  .carousel-inner {
+  /* .carousel-inner {
     display: flex;
     transition: transform 1s ease;
   }
   
   .carousel-item {
     flex: 0 0 100%;
+  } */
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
   }
   
   .carousel-control-prev,

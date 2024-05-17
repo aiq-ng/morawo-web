@@ -1,0 +1,78 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="h-4/5 items-center justify-between">
+    <div class="w-full md:my-0">
+      <h3
+        class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-semibold"
+      >
+        Energy
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Data analytics can benefit the Energy sector in several ways
+      </p>
+    </div>
+    <div class="mt-10 md:block w-full md:w-4/5 mx-a">
+      <img src="/assets/images/industry/energy.webp" width="90%" alt="" />
+    </div>
+  </div>
+  <div class="mt-10">
+    <p class="text-sm md:text-base">
+        The possible uses and potentials of data science in the energy sector are almost inexhaustible due to the gigantic amounts of data and the possibilities for linking with other data.<br />
+      <br />
+
+      With the help of big data analyzes, the energy consumer can now also be given individual recommendations on how to save energy - an important basis for customer loyalty. As a further service, it is possible to compare current consumption with past values and statistical average values from comparable households or businesses. <br />
+      Big data and artificial intelligence allow permanent observation with extensive analyzes and forecasts - a task that was almost impossible to manage in the past. This results in massive advantages for the energy industry:<br/><br/>
+      • Improvement of processes and coordination across the organization
+      <br />
+      • Failures of technical equipment can be forecasted (predictive maintenance) <br />
+      • More accurate price forecasting and real-time energy demand forecasting <br />
+      • Improved exchange of information between different market players, such as network operators, consumers, balancing group managers, storage operators and the various producers <br />
+      • Prediction of customer churn and fraud detection (churn prediction and fraud detection) <br />
+    </p>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Big data application areas
+    </h4>
+    <p class="text-sm md:text-base">
+        Information that may not have been used in the past can be used to open up new business areas or to develop services and minimize risks.
+    </p>
+
+    <p class="text-sm md:text-base mt-2 mb-1">
+        The large amount of information can be recorded cost-effectively, reliably and efficiently with big data technologies - both internal company data and external data.
+    </p>
+    <p class="text-sm md:text-base mb-2">
+        For the detection of relevant patterns, the fault tolerant learning and forecasting in the energy industry, we rely on:</p>
+
+    <p class="text-sm md:text-base my-2">
+        • Neural networks (and other processes from the field of artificial intelligence)
+    </p>
+    <p class="text-sm md:text-base my-2">
+        • statistical procedures for validation
+    </p>
+    <p class="text-sm md:text-base my-2">
+        • Visualization
+    </p>
+    <p class="text-sm md:text-base my-2">
+        We support you in lowering the transaction costs for analysis, forecasting and monitoring and pushing the limits of the currently possible analyzes and evaluations.
+    </p>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+        Why energy businesses should consider data analytics
+    </h4>
+
+    <div *ngFor="let item of dataType" class="py-3">
+      <div class="flex gap-2 items-center my-2">
+        <img src="/assets/icons/black-box.svg" width="12" height="10" alt="" />
+        <p class="font-medium text-base">{{ item.mainText }}</p>
+      </div>
+      <p class="font-normal ml-6 text-sm">{{ item.text }}</p>
+    </div>
+  </div>
+</div>

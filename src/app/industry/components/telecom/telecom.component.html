@@ -1,0 +1,148 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="h-4/5 items-center justify-between">
+    <div class="w-full md:my-0">
+      <h3
+        class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-semibold"
+      >
+        Telecom
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Transform your real estate and e-commerce services with data science
+      </p>
+    </div>
+    <div class="mt-10 md:block w-full md:w-4/5 mx-a">
+      <img src="/assets/images/industry/telecom.webp" width="90%" alt="" />
+    </div>
+  </div>
+  <div class="mt-10">
+    <p class="text-sm md:text-base">
+      Telecommunications companies can use data science to improve customer
+      satisfaction and the quality of their services and processes.<br />
+      <br />
+
+      Telecommunications companies have been successfully using data as well as
+      statistical and mathematical models to optimize their products and
+      services for many years. Dealing with “Big Data” is also not a novelty in
+      the industry, but is usually part of daily business.<br /><br />
+
+      The methods from the areas of data science, machine learning and AI are
+      new and exciting for all telecommunications companies, which often result
+      in a significant increase in model quality compared to conservative,
+      statistical approaches. In combination with the extensive databases in the
+      Telco sector, so many new use cases and scenarios arise that can have a
+      positive impact on business.
+      <br /><br />
+    </p>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Morawor’s services for Telecommunication companies
+    </h4>
+    <p class="font-normal my-2 text-sm">
+      Our data science team supports you in making the best possible use of your
+      data from operations, CRM and the network to improve your customer
+      relationships, processes and products. Some of our services include:
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Predictive maintenance: Use predictive maintenance methods to identify
+      problems in your devices
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Operational Analytics: Model the properties of your technical systems
+      and prevent failures.
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Customer Analytics: Model the behavior of your customers and identify
+      churn and upselling signals.
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Demand forecasting: Model the expected network load using machine
+      learning models and plan capacities.
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Quality Analytics: Analyze your quality data to uncover connections and
+      derive measures.
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • IoT / connected devices: Collect data from beacons and other IoT devices
+      in real time for analysis and modeling.
+    </p>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Why business should consider data science and data analytics
+    </h4>
+    <p class="font-normal my-2 text-sm">
+      • Generation of data reports so that companies can anticipate the future,
+      facing decision-making at different levels and in various organizational
+      areas, based on reliable data.
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Avoid incomplete, imprecise or fragmented, duplicate or inconsistent
+      data, achieving the acquisition of quality data. 
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Analysis of variables and records of detected anomalies.  
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Generation of alerts against possible failures in the processes.
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Expansion of the vision of business processes, with the possibility of
+      improvements in the quality of products and services.
+    </p>
+    <p class="font-normal my-2 text-sm">
+      • Optimization and efficiency of processes in real time.
+    </p>
+
+    <p class="font-normal my-2 text-sm">
+      • Improvements in the customer experience.
+    </p>
+
+    <p class="font-normal my-2 text-sm">
+      • Monetize data for quantifiable revenue and opportunities.
+    </p>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Why businesses should consider data science and data analytics
+    </h4>
+    <p class="font-normal my-2 text-sm">
+      The data collected, processed and analyzed by Big Data Analytics platform
+      is grouped into four fundamental blocks:
+    </p>
+    <div *ngFor="let item of dataType" class="py-3">
+      <div class="flex gap-2 items-center my-2">
+        <img src="/assets/icons/black-box.svg" width="12" height="10" alt="" />
+        <p class="font-medium text-base">{{ item.mainText }}</p>
+      </div>
+      <p class="font-normal ml-6 text-sm">{{ item.text }}</p>
+    </div>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Common use cases of data science in the telecom industry
+    </h4>
+    <div class="flex flex-wrap gap-8">
+      <div *ngFor="let item of cases" class="py-2">
+        <div class="flex gap-2 items-center my-1">
+          <img
+            src="/assets/icons/black-box.svg"
+            width="12"
+            height="10"
+            alt=""
+          />
+          <p class="font-medium text-base">{{ item }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

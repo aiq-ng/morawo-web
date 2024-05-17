@@ -8,6 +8,7 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { IndustriesInfoComponent } from './industries-info/industries-info.component';
+import { OurTechnologiesComponent } from './shared/components/our-technologies/our-technologies.component';
 
 const routes: Routes = [
   {

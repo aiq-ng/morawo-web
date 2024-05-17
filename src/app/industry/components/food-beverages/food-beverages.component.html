@@ -1,0 +1,119 @@
+<div class="container mx-auto min-h-screen flex flex-col justify-center">
+  <div class="h-4/5 items-center justify-between">
+    <div class="w-full md:my-0">
+      <h3
+        class="text-3xl md:text-5xl leading-[60px] mb-1 md:mb-3 font-semibold"
+      >
+        Food and Beverages
+      </h3>
+
+      <div
+        class="bg-gradient-to-r from-grey-700 to-grey-200 w-32 h-2 rounded-2xl"
+      ></div>
+      <p class="font-normal text-sm my-2">
+        Leverage on data analytics to improve your food and beverage business
+      </p>
+    </div>
+    <div class="mt-10 md:block w-full md:w-4/5 mx-a">
+      <img src="/assets/images/industry/food.webp" width="90%" alt="" />
+    </div>
+  </div>
+  <div class="mt-10">
+    <p class="text-sm md:text-base">
+      The benefits of data science in most industries can no longer be
+      understated. Deliver high-quality product, optimize the supply chain and
+      increase customers loyalty in your food business.<br />
+      <br />
+
+      The food and beverages industry is one of the sectors that has experienced
+      the most changes since the last century, when consumption habits were
+      modified to make way for processed foods and their mass production. Today,
+      this industry is facing another process of change and opportunity with
+      Data Science. <br /><br />
+
+      If Big Data has revolutionized the production processes of the most
+      important sectors, the food and beverages industry could not be the
+      exception.  Data Science has had benefits in customer service, quality
+      control and improving the operational efficiency of these companies.
+      <br /><br />
+    </p>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+        Aspects that data science can improve in the food and beverages sector
+    </h4>
+   
+    <div *ngFor="let item of dataType" class="py-3">
+      <div class="flex gap-2 items-center my-2">
+        <img src="/assets/icons/black-box.svg" width="12" height="10" alt="" />
+        <p class="font-medium text-base">{{ item.mainText }}</p>
+      </div>
+      <p class="font-normal ml-6 text-sm">{{ item.text }}</p>
+    </div>
+  </div>
+
+  <div class="my-4 py-3">
+    <h4 class="font-semibold text-xl md:text-3xl">
+      Other areas of application for data analytics in companies
+    </h4>
+    <p class=" text-base my-2">
+      Data Analytics offers solutions for almost all areas of the company. This
+      includes methods of developing new approaches and instruments for
+      controlling the company, as well as the provision of solutions in
+      corporate planning, price and volume planning, supplier evaluation,
+      invoice verification and increasing the efficiency of corporate
+      processes. 
+    </p>
+
+    <div class="flex flex-col justify-between flex-wrap gap-6 my-4">
+      <div *ngFor="let item of analytics" class="w-full">
+        <div class="flex items-center gap-2 my-3">
+          <div class="w-2 h-2 rounded-sm mr-4 bg-black"></div>
+          <p class="font-semibold text-base">{{ item.main }}</p>
+        </div>
+        <div class="ml-4">
+          <div
+            *ngFor="let content of item.content"
+            class="flex items-center gap-2"
+          >
+            <p>{{ content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-6">
+    <h4 class="text-xl my-4 md:text-3xl text-black font-semibold">
+      Big data application areas
+    </h4>
+    <p class="text-sm md:text-base">
+      There is certainly potential for Big Data Analytics in more application
+      areas than is currently conceivable. The existing projects and ideas are
+      just the beginning:
+    </p>
+
+    <p class="text-sm md:text-base my-2">
+      • Real-time evaluation of sensor data in the car, which could
+      significantly reduce the risk of accidents in traffic.
+    </p>
+
+    <p class="text-sm md:text-base my-2">
+      • Real-time evaluation of live images from surveillance cameras in
+      combination with forecasts as well as Twitter and cellular data for the
+      detection of critical situations at major events.
+    </p>
+    <p class="text-sm md:text-base my-2">
+      • Analysis of financial transactions to detect fraud
+    </p>
+    <p class="text-sm md:text-base my-2">
+      • Aircraft engines send data streams to the control center, where they are
+      evaluated in real time. Faults can be recognized immediately.
+    </p>
+    <p class="text-sm md:text-base my-2">
+      • Big data analytics can help identify the best treatment options for
+      patients.
+    </p>
+  </div>
+</div>
